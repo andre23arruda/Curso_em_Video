@@ -80,37 +80,38 @@ print(f'Mulheres abaixo dos 20: {mulheres20}')
    
      
 #%% ----------------- DESAFIO 70 ------------------------
-
 maisdemil = 0
 maisbarato = '0'                    
 total = 0
-
+preco0 = 0
+cont = 0
+print ('--------------- LOJAO DO XXT ---------------')
 while True:
   escolha = '0'                    
-  nome = input('Entre com o nome de um produto')                    
-  preco = int(input('Entre com o preco do produto'))
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  nome = input('Nome produto: ')                    
+  preco = int(input('Preco do produto R$ '))
+  if cont == 0:
+      maisbarato = nome
+      preco0 = preco
+      cont = 1
+  else:
+      if preco < preco0:
+          preco0 = preco
+          maisbarato = nome
+  if preco > 1000:
+      maisdemil += 1
+  total += preco   
+  while escolha != 'S' and escolha != 'N':
+      escolha = input('Deseja continuar? [S/N]').upper()
+  if escolha == 'N':
+      break
+print(f'Total: {total}\nMais de R$ 1000: {maisdemil}\nProduto mais barato: {maisbarato}')
+  
+  
+  
+  
+  
+  
+  
+  
+  
