@@ -81,6 +81,15 @@ print(f'Mulheres abaixo dos 20: {mulheres20}')
      
 #%% ----------------- DESAFIO 70 ------------------------
 
+maisdemil = 0
+maisbarato = '0'                    
+total = 0
+
+while True:
+  escolha = '0'                    
+  nome = input('Entre com o nome de um produto')                    
+  preco = int(input('Entre com o preco do produto'))
+                    
 
 
 
