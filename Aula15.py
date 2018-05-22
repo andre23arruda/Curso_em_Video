@@ -47,18 +47,16 @@ while True:
 print(f'Voce ganhou {n_vitorias} vezes')
 
 
-#%% ----------------- DESAFIO 69 ------------------------
 mulheres20 = 0
 homens = 0
 adultos = 0
-escolha  = '0'
 
 while True:
   sexo = '0'
   escolha  = '0'
   print('---------------- CADASTRO -------------------')
-  while sexo != M or sexo != F:
-    sexo = input('Digite o sexo da pessoa [M/F] ).upper()
+  while sexo != 'M' and sexo != 'F':
+    sexo = input('Digite o sexo da pessoa [M/F] ' ).upper()
   idade = 'a'
   while not(idade.isnumeric()):
     idade = input('Digite a idade da pessoa: ')
@@ -69,14 +67,15 @@ while True:
     homens += 1
   if sexo == 'F' and idade < 20:
     mulheres20 += 1
-  while escolha != 'S' or escolha != N:
-    escolha = input('Deseja continuar? [S/N]).upper
+  while escolha != 'S' and escolha != 'N':
+    escolha = input('Deseja continuar? [S/N] ' ).upper()
   if escolha == 'N':
-    breake
-                    
-print(f'Adultos: {adultos}')
+    break
+
+print(f'\nAdultos: {adultos}')
 print(f'Homens: {homens}')
-print(f'Mulheres abaixo dos 20: {mulheres20}')                    
+print(f'Mulheres abaixo dos 20: {mulheres20}') 
+          
    
      
 #%% ----------------- DESAFIO 70 ------------------------
