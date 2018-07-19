@@ -1,4 +1,4 @@
- --------------- DESAFIO 84 ------------------------
+# --------------- DESAFIO 84 ------------------------
 lista = list()
 dados = list()
 pesos = list()
@@ -32,7 +32,7 @@ for i in lista:
     if i[1] == menor_peso:
         print(f'[{i[0]}]',end = ' ')
     
- --------------- DESAFIO 85 ------------------------
+# --------------- DESAFIO 85 ------------------------
 lista = [[],[]]
 for i in range(0,7):
     print(f'Digite o {i+1}o valor: ', end = '')
@@ -60,7 +60,7 @@ for i in range(0,3):
         print(f'[ { matriz[i][l]} ]',end = '')
     print('\n',end = '')
 
- --------------- DESAFIO 87 ------------------------
+# --------------- DESAFIO 87 ------------------------
 matriz = [[],[],[]]
 soma_par = 0
 soma_3_coluna = 0
@@ -86,7 +86,7 @@ print(f'A soma dos valores pares é {soma_par}')
 print(f'A soma dos valores da terceira coluna é {soma_3_coluna}')
 print(f'O maior valor da segunda linha é {maior_2_linha}')
 
- --------------- DESAFIO 88 ------------------------
+# --------------- DESAFIO 88 ------------------------
 from random import randrange as rr
 import time
 
@@ -111,7 +111,7 @@ for i in range(0,n_jogos):
 print('-='*5 + ' BOA SORTE ' + '-='*5)
 
 
- --------------- DESAFIO 89 ------------------------
+# --------------- DESAFIO 89 ------------------------
 lista = list()
 
 while True:
