@@ -61,5 +61,30 @@ def maior(*parametros):
 
 maior((1,2,50,4,5,6),(2,6,80))
 
+## ============= DESAFIO 100 ============= ##
+import random
+from time import sleep
+
+def sorteia(a,b):
+    lista = []
+    print('Sorteando 5 valores da lista: ',end = '')    
+    for i in range(1,6):
+        z = random.randint(a, b)
+        lista.append(z)
+        print(z,end = ' ')
+        sleep(0.2)
+    print('PRONTO!')
+    somaPar(lista)
+
+def somaPar(lista):
+    s = 0
+    for v in lista:
+        if v%2 == 0:
+            s+=v
+    print(f'Somando os valores pares de {lista}, temos {s}')
+
+lista = sorteia(1,10)
+
+
 
 
