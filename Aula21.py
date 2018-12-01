@@ -122,7 +122,29 @@ d = notas(5,6,3,2,1,4,sit = False)
 print(d)
 
 
-
+# --------------------- DESAFIO 106 -------------------------- #
+while True:
+	fraseSistema = '  SISTEMA DE AJUDA PyHELP  '
+	tamanhoFraseSistema = len(fraseSistema)
+	print('\x1b[6;30;42m' + '~'*tamanhoFraseSistema + '\x1b[0m')
+	print('\x1b[6;30;42m' + '  SISTEMA DE AJUDA PyHELP  ' + '\x1b[0m')
+	print('\x1b[6;30;42m' + '~'*tamanhoFraseSistema + '\x1b[0m')
+	termo = str(input('Função ou Biblioteca > '))
+	if termo.upper() != 'FIM':
+		fraseTermo = "  Acessando o manual do comando '" + termo + "'  "
+		tamanhoFraseTermo = len(fraseTermo)
+		print('\x1b[60;29;44m' + '~'*tamanhoFraseTermo  + '\x1b[0m')
+		print('\x1b[60;29;44m' + fraseTermo  + '\x1b[0m')
+		print('\x1b[60;29;44m' + '~'*tamanhoFraseTermo  + '\x1b[0m',end = '')
+		help(termo)
+		print('\x1b[60;30;47m' + 'Help do comando {} exibido'.format(termo)  + '\x1b[0m')
+	else:
+		fraseBye = '  ATÉ LOGO!  '
+		tamanhoFraseSistema = len(fraseBye)
+		print('\x1b[6;29;41m' + '~'*tamanhoFraseSistema + '\x1b[0m')
+		print('\x1b[6;29;41m' + fraseBye + '\x1b[0m')
+		print('\x1b[6;29;41m' + '~'*tamanhoFraseSistema + '\x1b[0m')
+		break
 
 
 
