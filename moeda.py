@@ -83,13 +83,19 @@ def moeda(p):
 
 def resumo(p, ta, td, formatacao = True):
     print('-'*30)
-    print("{: ^30}".format("RESUMO DO VALOR"))
+    print("RESUMO DO VALOR".center(30))
+    # print("{: ^30}".format("RESUMO DO VALOR"))
     print('-'*30)
-    print("{: <20}{: >5}".format("Preço analisado:",moeda(p)))
+    
+    #print(f"Preço analisado:".ljust(20), f" {moeda(p)}".rjust(5))
     print("{: <20}{: >5}".format("Dobro do preço:",dobro(p)))
+    #print(f"Dobro do preço:".ljust(20),f"{dobro(p)}".rjust(5))
     print("{: <20}{: >5}".format("Metade do preço:",metade(p)))
+    #print(f"Metade do preço:".ljust(20),f"{metade(p)}".rjust(5))
     print("{: <20}{: >5}".format(str(ta) + '% de aumento',aumentar(p,ta)))
+    #print(f"{str(ta)}% de aumento".ljust(20),f"{aumentar(p,ta)}".rjust(5))
     print("{: <20}{: >5}".format(str(td) + '% de redução',diminuir(p,td)))
+    #print(f"{str(ta)}% de redução".ljust(20),f"{diminuir(p,ta)}".rjust(5))
     
     
     
